@@ -31,6 +31,7 @@ struct pending_uid {
 };
 
 struct manual_su_request {
+    int su_option;
     uid_t target_uid;
     pid_t target_pid;
     char token_buffer[KSU_TOKEN_LENGTH + 1];

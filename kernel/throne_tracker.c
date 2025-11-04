@@ -430,11 +430,11 @@ void track_throne(void)
 {
     struct list_head uid_list;
     struct uid_data *np, *n;
-    __maybe_unused struct file *fp;
-    __maybe_unused char chr = 0;
-    __maybe_unused loff_t pos = 0;
-    __maybe_unused loff_t line_start = 0;
-    __maybe_unused char buf[KSU_MAX_PACKAGE_NAME];
+     struct file *fp;
+    char chr = 0;
+    loff_t pos = 0;
+    loff_t line_start = 0;
+    char buf[KSU_MAX_PACKAGE_NAME];
     static bool manager_exist = false;
     static bool dynamic_manager_exist = false;
     int current_manager_uid = ksu_get_manager_uid() % 100000;

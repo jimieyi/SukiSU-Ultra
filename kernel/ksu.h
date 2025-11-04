@@ -9,10 +9,6 @@
 
 extern bool ksu_uid_scanner_enabled;
 
-#ifdef CONFIG_KSU_MANUAL_SU
-#define CMD_MANUAL_SU_REQUEST 50
-#endif
-
 #define EVENT_POST_FS_DATA 1
 #define EVENT_BOOT_COMPLETED 2
 #define EVENT_MODULE_MOUNTED 3
